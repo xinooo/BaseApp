@@ -52,8 +52,8 @@ public class ConfigMenuDeal {
         temp = new DataItemDetail();
         temp.setIntValue("iconID", R.mipmap.tab_icon_note_def);
         temp.setIntValue("iconSelectID", R.mipmap.tab_icon_note_slc);
-        temp.setStringValue(ConfigType.CONFIG_TYPE_TITLE_TAG, "TAB4");
-        temp.setStringValue(ConfigType.CONFIG_TYPE_KEY_TAG, ConfigType.TAB_4);
+        temp.setStringValue(ConfigType.CONFIG_TYPE_TITLE_TAG, "記事本");
+        temp.setStringValue(ConfigType.CONFIG_TYPE_KEY_TAG, ConfigType.TAB_A_VIEW_NOTE);
         items.addItem(temp);
         temp = new DataItemDetail();
         temp.setIntValue("iconID", R.mipmap.tab_icon_calculation_def);

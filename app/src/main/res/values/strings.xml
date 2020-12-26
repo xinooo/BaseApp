@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BaseApp</string>
+    <string name="btn_delete">刪除</string>
+    <string name="btn_photo">相片</string>
+    <string name="btn_save">儲存</string>
+
+    <string name="note">記事本</string>
+    <string name="note_delete">資料已刪除，謝謝</string>
+    <string name="note_save_success">您的記事內容以儲存成功!</string>
 </resources>

@@ -11,6 +11,7 @@ import com.BaseApp.Common.views.RecyclerClickListener;
 import com.BaseApp.R;
 import com.BaseApp.Util.FragmentsManagerUtil;
 import com.BaseApp.ui.Dialog.PopupDoubleBtnDialog;
+import com.BookKeeping.note.ANoteFragment;
 
 import butterknife.BindView;
 
@@ -21,6 +22,7 @@ public class MainActivity extends BaseActivity {
 
     private TestFragment testFragment;
     private TestFragment2 testFragment2;
+    private ANoteFragment mANoteFragment;
     private PopupDoubleBtnDialog mExitDialog;
 
     @Override
@@ -53,6 +55,8 @@ public class MainActivity extends BaseActivity {
                     showTestFragment();
                 }else if (itemDetail.getString(ConfigType.CONFIG_TYPE_KEY_TAG).equals(ConfigType.TAB_2)) {
                     showTestFragment2();
+                }else if (itemDetail.getString(ConfigType.CONFIG_TYPE_KEY_TAG).equals(ConfigType.TAB_A_VIEW_NOTE)) {
+                    showNoteFragment();
                 }
 
                 mHomeTabView.setSelectPositon(position);
@@ -76,6 +80,8 @@ public class MainActivity extends BaseActivity {
             showTestFragment();
         }else if (mCurrentTag.equals(ConfigType.TAB_2)){
             showTestFragment2();
+        }else if (mCurrentTag.equals(ConfigType.TAB_A_VIEW_NOTE)) {
+            showNoteFragment();
         }
     }
 
@@ -95,6 +101,11 @@ public class MainActivity extends BaseActivity {
             mFragmentTransaction.remove(testFragment2);
             FragmentsManagerUtil.instance().removeFragmentbyTag(this, ConfigType.TAB_2);
             testFragment2 = null;
+        }
+        if (null != mANoteFragment) {
+            mFragmentTransaction.remove(mANoteFragment);
+            FragmentsManagerUtil.instance().removeFragmentbyTag(this, ConfigType.TAB_A_VIEW_NOTE);
+            mANoteFragment = null;
         }
 
 
@@ -117,6 +128,11 @@ public class MainActivity extends BaseActivity {
             mFragmentTransaction.remove(testFragment2);
             FragmentsManagerUtil.instance().removeFragmentbyTag(this, ConfigType.TAB_2);
             testFragment2 = null;
+        }
+        if (null != mANoteFragment) {
+            mFragmentTransaction.remove(mANoteFragment);
+            FragmentsManagerUtil.instance().removeFragmentbyTag(this, ConfigType.TAB_A_VIEW_NOTE);
+            mANoteFragment = null;
         }
 
         mFragmentTransaction.commitAllowingStateLoss();
@@ -141,6 +157,19 @@ public class MainActivity extends BaseActivity {
             FragmentsManagerUtil.instance().addPushMsgTabFragment(MainActivity.this, testFragment2, mCurrentTag);
         }
         showFragment(testFragment2);
+    }
+
+    /**
+     * 展示记事本界面
+     */
+    public void showNoteFragment() {
+        mCurrentTag = ConfigType.TAB_A_VIEW_NOTE;
+        mANoteFragment = (ANoteFragment) FragmentsManagerUtil.instance().getFragmentbyTag(MainActivity.this, mCurrentTag);
+        if (null == mANoteFragment) {
+            mANoteFragment = ANoteFragment.newInstance();
+            FragmentsManagerUtil.instance().addPushMsgTabFragment(MainActivity.this, mANoteFragment, mCurrentTag);
+        }
+        showFragment(mANoteFragment);
     }
 
     @Override

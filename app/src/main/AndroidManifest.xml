@@ -3,9 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.BaseApp">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <!--
+    API 29 up 要加
+    android:requestLegacyExternalStorage="true"
+    來取得本地圖片
+    -->
     <application
+        android:requestLegacyExternalStorage="true"
         android:name="com.BaseApp.Common.AppMain"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -24,6 +32,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.BookKeeping.note.NewNoteActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:ignore="WrongManifestParent">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
     </application>
 
 </manifest>

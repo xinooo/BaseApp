@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e">
+
+    <com.BaseApp.Common.views.CommonTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl1"
+        android:layout_below="@id/titleBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/space_30">
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_20"
+                android:background="@drawable/a_view_datetag_bg"
+                android:drawableLeft="@mipmap/tag_icon"
+                android:drawablePadding="@dimen/space_5"
+                android:paddingLeft="@dimen/space_15"
+                android:paddingRight="@dimen/space_15"
+                android:textColor="@color/color_e"
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:maxEms="10"
+                tools:text="2020.11.20" />
+
+            <EditText
+                android:id="@+id/et_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_date"
+                android:layout_margin="@dimen/space_15"
+                android:background="@color/color_e"
+                android:gravity="top"
+                android:minHeight="@dimen/space_80"
+                android:textColor="@color/color_262626"
+                android:textSize="16sp"
+                tools:text="今天交友软体约了个妹子，很可爱….但太会吃了，还是留个片回忆下..
+                \n餐厅主要是考量到家族还有一只可爱的小狗狗，选择这间可以跟宠物一起用餐.." />
+
+            <RelativeLayout
+                android:id="@+id/photo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/et_note"
+                android:layout_marginLeft="@dimen/space_40"
+                android:layout_marginRight="@dimen/space_40">
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:adjustViewBounds="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_25"
+                    android:layout_alignLeft="@id/iv_photo"
+                    android:layout_alignRight="@id/iv_photo"
+                    android:layout_alignBottom="@+id/iv_photo"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/a_view_deleteimg_bg">
+
+                    <ImageView
+                        android:id="@+id/delete_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/delete_photo" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View style="@style/line"
+            android:id="@+id/divider"
+            android:background="@color/color_EFEFEF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/tab_icon_delet_slc"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"
+                android:text="@string/btn_delete"/>
+
+            <TextView
+                android:id="@+id/tv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_50"
+                android:drawableTop="@mipmap/tab_icon_camera_slc"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"
+                android:text="@string/btn_photo"/>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_50"
+                android:drawableTop="@mipmap/tab_icon_safely_slc"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="10sp"
+                android:text="@string/btn_save"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
