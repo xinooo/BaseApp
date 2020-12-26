@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/system_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_20"
+        android:background="@color/color_e" />
+
+    <RelativeLayout
+        android:id="@+id/app_title_bar"
+        style="@style/top_tab_layout_style"
+        android:background="@color/color_e">
+
+        <com.BaseApp.Common.Tint.TintImageTextView
+            android:id="@+id/title_left_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="@dimen/space_a"
+            custom:image_direction="3"
+            custom:image_normal_color="@color/color_nav_font"
+            custom:image_select_color="@color/color_nav_font_p"
+            custom:image_src="@mipmap/a_nav_back"
+            custom:text_normal_color="@color/colorAccent"
+            custom:text_select_color="@color/color_nav_font_p"
+            custom:text_size="@dimen/font_b_px" />
+
+        <com.BaseApp.Common.Tint.TintImageTextView
+            android:id="@+id/title_left_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/title_left_btn"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_8"
+            android:visibility="gone"
+            custom:image_direction="3"
+            custom:image_normal_color="@color/color_nav_font"
+            custom:image_select_color="@color/color_nav_font_p"
+            custom:text_normal_color="@color/color_nav_font"
+            custom:text_select_color="@color/color_nav_font_p"
+            custom:text_size="@dimen/font_b_px" />
+
+        <com.BaseApp.Common.Tint.TintImageTextView
+            android:id="@+id/title_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:gravity="right|center_vertical"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            custom:image_direction="4"
+            custom:image_normal_color="@color/color_nav_font"
+            custom:image_padding="@dimen/space_c"
+            custom:image_select_color="@color/color_nav_font_p"
+            custom:text_normal_color="@color/colorAccent"
+            custom:text_select_color="@color/color_nav_font_p"
+            custom:text_size="@dimen/font_b_px" />
+
+        <com.BaseApp.Common.Tint.TintImageTextView
+            android:id="@+id/title_right_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/title_right_btn"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:paddingRight="@dimen/space_8"
+            custom:image_direction="3"
+            custom:image_normal_color="@color/color_nav_font"
+            custom:image_select_color="@color/color_nav_font_p"
+            custom:text_normal_color="@color/color_nav_font"
+            custom:text_select_color="@color/color_nav_font_p"
+            custom:text_size="@dimen/font_b_px" />
+
+        <View
+            android:id="@+id/title_right_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_alignStart="@+id/title_right_btn"
+            android:layout_alignLeft="@+id/title_right_btn"
+            android:layout_alignEnd="@+id/title_right_btn"
+            android:layout_alignRight="@+id/title_right_btn"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:visibility="gone"/>
+
+
+
+        <View
+            android:id="@+id/title_right_line2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_alignStart="@+id/title_right_btn2"
+            android:layout_alignLeft="@+id/title_right_btn2"
+            android:layout_alignEnd="@+id/title_right_btn2"
+            android:layout_alignRight="@+id/title_right_btn2"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorAccent"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_im_count"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mine_red_bg2"
+            android:layout_toRightOf="@+id/title_right_btn"
+            android:layout_above="@+id/title_right_btn"
+            android:gravity="center"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginBottom="-8dp"
+            android:textColor="@color/color_e"
+            android:textSize="10sp"
+            tools:text="9"
+            android:visibility="gone"
+            tools:visibility="visible" />
+        <TextView
+            android:id="@+id/tv_im_count2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_99"
+            android:layout_toRightOf="@+id/title_right_btn"
+            android:layout_above="@+id/title_right_btn"
+            android:gravity="center"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginBottom="-8dp"
+            android:textColor="@color/color_e"
+            android:textSize="10sp"
+            android:visibility="gone"
+            tools:visibility="gone" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="75dp"
+            android:paddingRight="75dp">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:textColor="@color/color_nav_title"
+                android:textSize="@dimen/font_a"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_title_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.BaseApp.Common.views.ToggleSwitchView
+            android:id="@+id/main_tab_title"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/title_divider"
+            style="@style/top_tab_divider_line_style"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+</LinearLayout>

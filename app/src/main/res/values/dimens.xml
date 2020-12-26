@@ -1,0 +1,171 @@
+<resources>
+    <!--导航栏（头部）标题大17sp-->
+    <dimen name="font_a">17sp</dimen>
+    <!--按钮 左边菜单15sp-->
+    <dimen name="font_b">16sp</dimen>
+    <!--导航栏（头部）左右两边，正文 14sp-->
+    <dimen name="font_c">16sp</dimen>
+    <!--小菜单12sp,tab菜单字体-->
+    <dimen name="font_d">14sp</dimen>
+    <!--提示 ，分时K线字体12sp-->
+    <dimen name="font_e">12sp</dimen>
+    <!--行情点差，分时K线字体出现文字多放不下时用-->g
+    <dimen name="font_f">10sp</dimen>
+    <!--参考字-->
+    <dimen name="font_g">8sp</dimen>
+    <!--行情价格小字15sp-->
+    <dimen name="font_price_s">15sp</dimen>
+    <!--行情价格大字20sp-->
+    <dimen name="font_price_m">20px</dimen>
+
+    <!--导航栏（头部）标题大17sp-->
+    <dimen name="font_a_px">17px</dimen>
+    <!--按钮 左边菜单15sp-->
+    <dimen name="font_b_px">16px</dimen>
+    <!--导航栏（头部）左右两边，正文 14sp-->
+    <dimen name="font_c_px">15px</dimen>
+    <!--小菜单12sp,tab菜单字体-->
+    <dimen name="font_d_px">14px</dimen>
+    <!--提示 ，分时K线字体10sp-->
+    <dimen name="font_e_px">12px</dimen>
+    <!--行情点差，分时K线字体出现文字多放不下时用9sp-->
+    <dimen name="font_f_px">10px</dimen>
+    <!--参考字-->
+    <dimen name="font_g_px">8px</dimen>
+    <!--行情价格小字15sp-->
+    <dimen name="font_price_s_px">15px</dimen>
+    <!--行情价格大字20sp-->
+    <dimen name="font_price_m_px">20px</dimen>
+
+    <!--页面左右间距，字与图片间距-->
+    <dimen name="space_font">4dp</dimen>
+    <!--页面左右间距，字与图片间距-->
+    <dimen name="space_a">12dp</dimen>
+    <!--上面-->
+    <dimen name="space_b">24dp</dimen>
+    <!--较小的间距-->
+    <dimen name="space_c">6dp</dimen>
+    <!--线高-->
+    <dimen name="space_d">2px</dimen>
+    <!--选中底边线高（持仓）-->
+    <dimen name="space_e">2dp</dimen>
+    <!--边框线-->
+    <dimen name="space_f">1dp</dimen>
+    <!--页面元素上下左右较大间距-->
+    <dimen name="space_g">20dp</dimen>
+    <!--页面元素上下左右较小间距-->
+    <dimen name="space_h">10dp</dimen>
+    <!--页面元素上下左右较小间距-->
+    <dimen name="space_i">7dp</dimen>
+    <!--行情图表类型的间距-->
+    <dimen name="space_j">15dp</dimen>
+
+    <!--导航栏（头部）高,系统每行高-->
+    <dimen name="height_a">44dp</dimen>
+    <!--标签栏（底部菜单）-->
+    <dimen name="height_b">50dp</dimen>
+    <!--输入框大小-->
+    <dimen name="height_c">34dp</dimen>
+    <!--tab高,默认行高-->
+    <dimen name="height_d">37dp</dimen>
+    <!--行情列高-->
+    <dimen name="height_e">60dp</dimen>
+    <!--按钮高，左菜单行高-->
+    <dimen name="height_f">42dp</dimen>
+    <!--持仓高-->
+    <dimen name="height_g">94dp</dimen>
+    <!--持仓头部信息未展开高-->
+    <dimen name="height_h">58dp</dimen>
+    <!--持仓头部信息展开高-->
+    <dimen name="height_k">100dp</dimen>
+    <dimen name="height_k_new">180dp</dimen>
+
+    <dimen name="height_j">140dp</dimen>
+    <!-- <dimen name="weight_a">44% (140dp)
+    <dimen name="weight_b">28%  (90dp)
+    <dimen name="weight_c">76% (240dp)-->
+    <!--行情帐户按钮宽-->
+    <dimen name="weight_e">72dp</dimen>
+
+    <!--按钮圆角 6-->
+    <dimen name="round_a">3dp</dimen>
+    <!--用于弹出提示框圆角10-->
+    <dimen name="round_b">10dp</dimen>
+    <!--用于弹出提示框圆角16-->
+    <dimen name="round_c">18dp</dimen>
+    <!--圆角30-->
+    <dimen name="round_d">30dp</dimen>
+    <!--顶部导航跟上面的高度-->
+    <dimen name="toolbar_top_space">0dp</dimen>
+    <dimen name="toolbar_top_space1">0dp</dimen>
+    <dimen name="toolbar_pop_top_space">0dp</dimen>
+
+
+
+    <dimen name="space_n_12">-12dp</dimen>
+    <dimen name="space_0.5">0.5dp</dimen>
+    <dimen name="space_0_">0.5dp</dimen>
+    <dimen name="space_1">1dp</dimen>
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_3">3dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_5">5dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_7">7dp</dimen>
+    <dimen name="space_7_5">7.5dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_9">9dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_11">11dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_13">13dp</dimen>
+    <dimen name="space_14">14dp</dimen>
+    <dimen name="space_15">15dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_16_5">16.5dp</dimen>
+    <dimen name="space_17">17dp</dimen>
+    <dimen name="space_18">18dp</dimen>
+    <dimen name="space_19">19dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_21">21dp</dimen>
+    <dimen name="space_22">22dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_25">25dp</dimen>
+    <dimen name="space_27">27dp</dimen>
+    <dimen name="space_28">28dp</dimen>
+    <dimen name="space_30">30dp</dimen>
+    <dimen name="space_31">31dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_35">35dp</dimen>
+    <dimen name="space_36">36dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_43">43dp</dimen>
+    <dimen name="space_45">45dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_50">50dp</dimen>
+    <dimen name="space_54">54dp</dimen>
+    <dimen name="space_55">55dp</dimen>
+    <dimen name="space_65">65dp</dimen>
+    <dimen name="space_60">60dp</dimen>
+    <dimen name="space_66">66dp</dimen>
+    <dimen name="space_70">70dp</dimen>
+    <dimen name="space_74">74dp</dimen>
+    <dimen name="space_75">75dp</dimen>
+    <dimen name="space_80">80dp</dimen>
+    <dimen name="space_90">90dp</dimen>
+    <dimen name="space_92">92dp</dimen>
+    <dimen name="space_95">95dp</dimen>
+    <dimen name="space_100">100dp</dimen>
+    <dimen name="space_105">105dp</dimen>
+    <dimen name="space_115">115dp</dimen>
+    <dimen name="space_107">107dp</dimen>
+    <dimen name="space_110">110dp</dimen>
+    <dimen name="space_120">120dp</dimen>
+    <dimen name="space_130">130dp</dimen>
+    <dimen name="space_155">155dp</dimen>
+    <dimen name="space_230">230dp</dimen>
+    <dimen name="space_280">280dp</dimen>
+    <dimen name="space_330">330dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

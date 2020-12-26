@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TintView">
+        <attr name="click_type" format="enum">
+            <enum name="CLICK_TYPE" value="0"/>
+            <enum name="CHECK_TYPE" value="1"/>
+            <enum name="BOTH_TYPE" value="2"/>
+        </attr>
+        <attr name="bg_normal_color" format="reference|color"/>
+        <attr name="bg_select_color" format="reference|color"/>
+        <attr name="text_normal_color" format="reference|color"/>
+        <attr name="text_select_color" format="reference|color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="text_title" format="string"/>
+        <attr name="image_normal_color" format="reference|color"/>
+        <attr name="image_select_color" format="reference|color"/>
+        <attr name="image_src" format="reference"/>
+        <attr name="image_padding" format="dimension"/>
+        <attr name="image_direction" format="integer"/>
+        <attr name="image_rendering" format="boolean"/>
+    </declare-styleable>
+
+</resources>

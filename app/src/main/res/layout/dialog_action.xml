@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_corner_white_bg"
+        android:minWidth="280dp"
+        android:orientation="vertical" >
+
+        <ViewStub
+            android:id="@+id/action_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <LinearLayout android:id="@+id/action_btn_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                style="@style/common_divider_line_style"
+                android:layout_marginTop="@dimen/space_b" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <com.BaseApp.Common.Tint.TintTextView
+                    android:id="@+id/action_btn_neg"
+                    style="@style/dialog_btn_style"
+                    custom:text_select_color = "@color/color_e"
+                    custom:text_normal_color = "@color/color_k"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_left_btn_bg_selector"
+                    android:text="取消" />
+
+                <View
+                    android:id="@+id/divider"
+                    style="@style/common_divider_h_line_style" />
+
+                <com.BaseApp.Common.Tint.TintTextView
+                    android:id="@+id/action_btn_pos"
+                    style="@style/dialog_btn_style"
+                    custom:text_select_color = "@color/color_e"
+                    custom:text_normal_color = "@color/color_k"
+                    android:layout_weight="1"
+                    android:background="@drawable/dialog_right_btn_bg_selector"
+                    android:focusable="true"
+                    android:text="確定" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
